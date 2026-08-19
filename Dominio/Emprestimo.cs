@@ -29,7 +29,7 @@ public class Emprestimo
     {
         get
         {
-            // Se ja foi devolvido, retorna o valor que foi congelado no dia da devolução
+            
             if (ValorMultaFinal.HasValue) 
                 return ValorMultaFinal.Value;
 
