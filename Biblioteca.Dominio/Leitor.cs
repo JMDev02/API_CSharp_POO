@@ -2,6 +2,8 @@ namespace Biblioteca.Dominio;
 
 public class Leitor
 {
+    private static int idLeitor = 1;
+    public int Id {get;}
     private readonly List<Emprestimo> _emprestimosAtivos = new();
 
     public string Nome { get; private set; }
@@ -14,6 +16,7 @@ public class Leitor
 
         Nome = nome;
         DataNascimento = dataNascimento;
+        Id = idLeitor++;
     }
 
     public int CalcularIdade(DateTime? dataReferencia = null)
