@@ -49,3 +49,11 @@ decimal multaNoDiaDevolucao = empElias.MultaAtual;
 
 // Duas semanas depois, a multa DEVE continuar sendo exatamente a mesma
 Console.WriteLine($"Cena 5 OK: Multa gravada = R$ {multaNoDiaDevolucao}. Consultada semanas depois = R$ {empElias.MultaAtual}.");
+
+
+
+
+var livroNovo = new Livro("O Cortiço", "Aluísio Azevedo");
+var revistaNova = new Revista("Piauí", "Alvinegra");
+Console.WriteLine($"Cena 6 - {livroNovo.Titulo} e o Id {livroNovo.Id}, " +
+                  $"{revistaNova.Titulo} e o Id {revistaNova.Id}");
